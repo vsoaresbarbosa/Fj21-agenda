@@ -14,7 +14,9 @@ public class OiMundo extends HttpServlet {
 	@Override
 	protected void service(HttpServletRequest arg0, HttpServletResponse arg1) throws ServletException, IOException {
 		PrintWriter out = arg1.getWriter();
-
+		
+		System.out.println("service");
+		
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<title> Primeira servlet </title>");
@@ -23,5 +25,17 @@ public class OiMundo extends HttpServlet {
 		out.println("<h1> Oi Mundo servlet </h1>");
 		out.println("</body>");
 		out.println("</html>");
+	}
+	
+	@Override
+	public void init() throws ServletException {
+		System.out.println("init");
+		super.init();
+	}
+	
+	@Override
+	public void destroy() {
+		System.out.println("Destroy");
+		super.destroy();
 	}
 }
