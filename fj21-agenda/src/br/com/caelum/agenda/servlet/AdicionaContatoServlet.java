@@ -24,7 +24,7 @@ public class AdicionaContatoServlet extends HttpServlet {
 		//busca o writer
 		PrintWriter out = response.getWriter();
 		
-		//buscando os parametros no request
+		//buscando os parametros no requestd
 		String nome = request.getParameter("nome");
 		String endereco = request.getParameter("endereco");
 		String email = request.getParameter("email");
