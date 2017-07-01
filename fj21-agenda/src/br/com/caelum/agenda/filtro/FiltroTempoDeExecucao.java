@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
 @WebFilter ("/*")
-	public class FiltroTempoDeExecucao implements Filter {
+	public abstract class FiltroTempoDeExecucao implements Filter {
 		public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 							throws IOException, ServletException {
 			
