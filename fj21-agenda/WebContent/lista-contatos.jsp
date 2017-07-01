@@ -23,6 +23,7 @@
 	<td>Endereco</td> <td>Data de Nascimento</td>
 	<!-- percorre contatos montando as linhas da tabela -->
 		<c:forEach var="contato" items="${dao.lista }" varStatus="id">
+		
 			<tr bgcolor="#${id.count % 2 == 0 ? '255228196' : 'astasdf' }">
 				<td>${contato.nome }</td>
 				<td>
